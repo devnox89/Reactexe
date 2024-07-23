@@ -1,6 +1,6 @@
 import { Hello } from "./Components";
 import { Welcome } from "./Welcome";
-import { Message } from "./Conditional";
+// import { Message } from "./Conditional";
 
 export function App() {
     return (
@@ -14,7 +14,7 @@ export function App() {
             <Welcome name="Francesco" age={34} />
             <hr />
             <h2>ESERCIZIO - Conditional Rendering</h2>
-            <Message age={19} name='John'/>
+            {/* <Message age={19} name='John'/> */}
         </div>
     );
 }
