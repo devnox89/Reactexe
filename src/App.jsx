@@ -1,4 +1,5 @@
 import { Hello } from "./Components";
+import { Message } from "./Message";
 
 export function App() {
     return (
@@ -8,7 +9,7 @@ export function App() {
             {/* SPIEGAZIONE
             possiamo utilizzare più volte il componente, questo verrà visualizzato a blocco subito dopo il primo component. */}
             <Hello />
-            <p>What a beautiful day!</p>
+            <Message/>
             <hr />
         </div>
     );
