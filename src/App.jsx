@@ -1,18 +1,15 @@
-import { Hello } from "./1-components/Hello";
-import { Welcome } from "./2-props/Welcome";
+import { Hello } from "./Components";
 
 export function App() {
     return (
         <div>
             <h2>ESERCIZIO - Components</h2>
             <Hello />
+            {/* SPIEGAZIONE
+            possiamo utilizzare più volte il componente, questo verrà visualizzato a blocco subito dopo il primo component. */}
             <Hello />
             <p>What a beautiful day!</p>
             <hr />
-            <h2>ESERCIZIO - Props</h2>
-            <Welcome name="Francesco" age={34} />
-            <hr />
-            <h2>ESERCIZIO - Conditional Rendering</h2>
         </div>
     );
 }
