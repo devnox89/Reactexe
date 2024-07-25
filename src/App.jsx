@@ -8,6 +8,8 @@ export function App() {
         <div>
             <h2>ESERCIZIO - Components</h2>
             <Hello />
+            {/* SPIEGAZIONE
+            si può inserire più  di un richiamo dello stesso component, questo verrà visualizzato in blocco dopo il precedente */}
             <Hello />
             <p>What a beautiful day!</p>
             <hr />
