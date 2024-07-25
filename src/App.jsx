@@ -1,23 +1,24 @@
 import { Hello } from "./Components";
+import { Message } from "./Message";
 import { Welcome } from "./Welcome";
-import { Message } from "./Conditional";
-import { AlertClock } from "./AlertClock";
+import { Conditional} from "./Conditional";
+// import { AlertClock } from "./AlertClock";
 
 export function App() {
     return (
         <div>
             <h2>ESERCIZIO - Components</h2>
+            <Hello/>
             <Hello />
-            <Hello />
-            <p>What a beautiful day!</p>
+            <Message/>
             <hr />
             <h2>ESERCIZIO - Props</h2>
             <Welcome name="Francesco" age={34} />
             <hr />
             <h2>ESERCIZIO - Conditional Rendering</h2>
-            <Message age={19} name='John'/>
+            <Conditional age={19} name='John'/>
             <hr />
-            <AlertClock/>
+            {/* <AlertClock/> */}
         </div>
     );
 }
