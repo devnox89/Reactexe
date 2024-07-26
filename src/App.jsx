@@ -3,6 +3,7 @@ import { Message } from "./Message";
 import { Welcome } from "./Welcome";
 import { Conditional} from "./Conditional";
 import { AlertClock } from "./AlertClock";
+import { Counter } from "./StateCounter";
 
 export function App() {
     return (
@@ -20,6 +21,10 @@ export function App() {
             <hr />
             <h2>ESERCIZIO - Event</h2>
             <AlertClock/>
+            <hr />
+            <h2>ESERCIZIO - State</h2>
+            <Counter/>
+            <hr />
         </div>
     );
 }
