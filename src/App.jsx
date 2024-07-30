@@ -4,6 +4,8 @@ import { Welcome } from "./Welcome";
 import { Conditional} from "./Conditional";
 import { AlertClock } from "./AlertClock";
 import { Counter } from "./StateCounter";
+import { ClockCounter } from "./ClockCounter";
+import { Clock } from "./Clock";
 
 export function App() {
     return (
@@ -25,6 +27,9 @@ export function App() {
             <h2>ESERCIZIO - State</h2>
             <Counter/>
             <hr />
+            <h2>Esercizio useEffect</h2>
+            <ClockCounter/>
+            <Clock/>
         </div>
     );
 }
