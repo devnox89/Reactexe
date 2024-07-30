@@ -6,6 +6,7 @@ import { AlertClock } from "./AlertClock";
 import { Counter } from "./StateCounter";
 import { ClockCounter } from "./ClockCounter";
 import { Clock } from "./Clock";
+import { MouseClicker } from "./MouseClick";
 
 export function App() {
     return (
@@ -24,12 +25,15 @@ export function App() {
             <h2>ESERCIZIO - Event</h2>
             <AlertClock/>
             <hr />
-            <h2>ESERCIZIO - State</h2>
+            <h2>ESERCIZIO - useState</h2>
             <Counter/>
             <hr />
             <h2>Esercizio useEffect</h2>
             <ClockCounter/>
             <Clock/>
+            <hr />
+            <h2>Esercizio Handling Events</h2>
+            <MouseClicker/>
         </div>
     );
 }
