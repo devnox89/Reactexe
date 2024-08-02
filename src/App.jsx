@@ -7,6 +7,7 @@ import { Counter } from "./StateCounter";
 import { ClockCounter } from "./ClockCounter";
 import { Clock } from "./Clock";
 import { MouseClicker } from "./MouseClick";
+import { ControlledForm} from "./ControlledForm";
 
 export function App() {
     return (
@@ -34,6 +35,10 @@ export function App() {
             <hr />
             <h2>Esercizio Handling Events</h2>
             <MouseClicker/>
+            <hr />
+            <h2>Esercizio Controlled Form</h2>
+            <ControlledForm/>
+            <hr />
         </div>
     );
 }
