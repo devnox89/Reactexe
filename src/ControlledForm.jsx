@@ -31,36 +31,18 @@ function Login({ onLogin }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input
-                name="username"
-                value={data.username}
-                onChange={handleInputChange}
-            />
-            <input
-                name="password"
-                type="password"
-                value={data.password}
-                onChange={handleInputChange}
-            />
-            <input
-                name="session"
-                type="checkbox"
-                checked={data.session}
-                onChange={handleInputChange}
-            />
-            <button type="submit" disabled={!data.username || !data.password}>
-                Login
-            </button>
-            <button type="button" onClick={handleResetForm}>
-                Reset
-            </button>
+            <input name="username" value={data.username} onChange={handleInputChange}/>
+            <input name="password" type="password" value={data.password} onChange={handleInputChange}/>
+            <input name="session"type="checkbox"checked={data.session} onChange={handleInputChange}/>
+            <button type="submit" disabled={!data.username || !data.password}>Login</button>
+            <button type="button" onClick={handleResetForm}>Reset</button>
         </form>
     );
 }
 
 export function ControlledForm() {
     function handleLogin(data) {
-        console.log(`Login: Username: ${data.username} Password: ${data.password}`);
+        console.log(data);
     }
 
     return (
