@@ -9,6 +9,7 @@ import { Clock } from "./Clock";
 import { MouseClicker } from "./MouseClick";
 // import { ControlledForm} from "./ControlledForm";
 import { UncontrolledForm } from "./UncontrolledForm";
+import { FocusableInput } from "./UseRefs";
 
 export function App() {
     return (
@@ -42,6 +43,9 @@ export function App() {
             <hr /> */}
             <h2>Esercizio Uncontrolled Form</h2>
             <UncontrolledForm/>
+            <hr />
+            <h2>Esercizio useRefs</h2>
+            <FocusableInput/>
         </div>
     );
 }

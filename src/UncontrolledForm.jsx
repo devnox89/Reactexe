@@ -27,7 +27,7 @@ export function UncontrolledForm() {
 
     return (
         <form>
-            <h1>Login Non Controllato</h1>
+            <h3>Login Non Controllato</h3>
             <input name="username"/>
             <input name="password" type="password"/>
             <label><input name="remember" type="checkbox" />Remember me</label>
