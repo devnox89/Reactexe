@@ -10,6 +10,8 @@ import { MouseClicker } from "./MouseClick";
 // import { ControlledForm} from "./ControlledForm";
 import { UncontrolledForm } from "./UncontrolledForm";
 import { FocusableInput } from "./UseRefs";
+import { Color } from "./Color";
+import { Colors } from "./Colors";
 
 export function App() {
     return (
@@ -46,6 +48,15 @@ export function App() {
             <hr />
             <h2>Esercizio useRefs</h2>
             <FocusableInput/>
+            <hr />
+            <h2>Esercizio Elenchi</h2>
+            <Color color={{id: 1, name: 'Rosso'}}/>
+            <Colors colors={[
+                {id: 2, name: 'Giallo'},
+                {id: 3, name: 'Blu'},
+                {id: 4, name: 'Rosa'},
+                {id: 5, name: 'Nero'},
+            ]}/>
         </div>
     );
 }
