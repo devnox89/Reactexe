@@ -12,6 +12,7 @@ import { UncontrolledForm } from "./UncontrolledForm";
 import { FocusableInput } from "./UseRefs";
 import { Color } from "./Color";
 import { Colors } from "./Colors";
+import { TodoList } from "./TodoList";
 
 export function App() {
     return (
@@ -57,6 +58,9 @@ export function App() {
                 {id: 4, name: 'Rosa'},
                 {id: 5, name: 'Nero'},
             ]}/>
+            <hr />
+            <h2>Esercizio Elenchi & Effetti  todo-list</h2>
+            <TodoList/>
         </div>
     );
 }
