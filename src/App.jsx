@@ -7,7 +7,7 @@ import { Counter } from "./StateCounter";
 import { ClockCounter } from "./ClockCounter";
 import { Clock } from "./Clock";
 import { MouseClicker } from "./MouseClick";
-// import { ControlledForm} from "./ControlledForm";
+import { ControlledForm} from "./ControlledForm";
 import { UncontrolledForm } from "./UncontrolledForm";
 import { FocusableInput } from "./UseRefs";
 import { Color } from "./Color";
@@ -41,9 +41,9 @@ export function App() {
             <h2>Esercizio Handling Events</h2>
             <MouseClicker/>
             <hr />
-            {/* <h2>Esercizio Controlled Form</h2>
+            <h2>Esercizio Controlled Form</h2>
             <ControlledForm/>
-            <hr /> */}
+            <hr />
             <h2>Esercizio Uncontrolled Form</h2>
             <UncontrolledForm/>
             <hr />

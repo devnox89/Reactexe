@@ -29,12 +29,19 @@ function Login({ onLogin }) {
         onLogin(data);
     }
 
+    const buttonStyle = {
+        backgroundColor: data.password.length < 8 ? 'red' : 'green',
+        color: 'white',
+        padding: '10px',
+        margin: '5px',   
+    };
+
     return (
         <form onSubmit={handleSubmit}>
             <input name="username" value={data.username} onChange={handleInputChange}/>
             <input name="password" type="password" value={data.password} onChange={handleInputChange}/>
             <input name="session"type="checkbox"checked={data.session} onChange={handleInputChange}/>
-            <button type="submit" disabled={!data.username || !data.password}>Login</button>
+            <button type="submit" style={buttonStyle} disabled={!data.username || !data.password}>Login</button>
             <button type="button" onClick={handleResetForm}>Reset</button>
         </form>
     );
