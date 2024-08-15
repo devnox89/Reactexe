@@ -16,7 +16,7 @@ import { TodoList } from "./TodoList";
 
 export function App() {
     return (
-        <div>
+        <div className="app">
             <h2>ESERCIZIO - Components</h2>
             <Hello/>
             <Hello />

@@ -1,0 +1,15 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    non userò il reset per questo esercizio, onde evitare bug visivi su tutti i componenti, ma il reset si usa sempre
+
+} */  
+
+.welcome{
+    background-color: mediumaquamarine;
+    border: 5px solid maroon;
+    padding: 5px;
+    margin: 5px;
+}
