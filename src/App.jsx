@@ -13,6 +13,7 @@ import { FocusableInput } from "./UseRefs";
 import { Color } from "./Color";
 import { Colors } from "./Colors";
 import { TodoList } from "./TodoList";
+import { Container } from "./CompositionChildren";
 
 export function App() {
     return (
@@ -61,6 +62,11 @@ export function App() {
             <hr />
             <h2>Esercizio Elenchi & Effetti  todo-list</h2>
             <TodoList/>
+            <hr />
+            <Container title={<h2>Esercizio Component Composition</h2>}>
+                <Hello/>
+            </Container>
+            
         </div>
     );
 }
