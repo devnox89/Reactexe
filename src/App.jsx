@@ -14,8 +14,18 @@ import { Color } from "./Color";
 import { Colors } from "./Colors";
 import { TodoList } from "./TodoList";
 import { Container } from "./CompositionChildren";
+import { LanguageContext } from "./LanguageContext";
+import { useState } from "react";
+import { HelloContext } from "./HelloContext";
 
 export function App() {
+
+    const [language, setLanguage] = useState('en')
+
+    function handleSetLanguage(language) {
+        setLanguage(language)
+    }
+
     return (
         <div className="app">
             <h2>ESERCIZIO - Components</h2>
@@ -66,6 +76,16 @@ export function App() {
             <Container title={<h2>Esercizio Component Composition</h2>}>
                 <Hello/>
             </Container>
+            <hr />
+            <h2>Esercizio Context</h2>
+            <LanguageContext.Provider value={language}>
+                <div>
+                    <HelloContext/>
+                    <button onClick={() => handleSetLanguage('it')}>IT</button>
+                    <button onClick={() => handleSetLanguage('en')}>EN</button>
+                </div>
+            </LanguageContext.Provider>
+            <hr />
             
         </div>
     );
