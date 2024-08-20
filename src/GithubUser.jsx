@@ -32,11 +32,11 @@ export function GithubUser({ username }) {
     return (
         <div>
             {data && (
-                <>
+                <div>
                     <img src={data.avatar_url} alt={`${data.login}'s avatar`} width={100} />
                     <h1>{data.name}</h1>
                     <h2>@{data.login}</h2>
-                </>
+                </div>
             )}
         </div>
     );
