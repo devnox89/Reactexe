@@ -17,6 +17,8 @@ import { Container } from "./CompositionChildren";
 import { LanguageContext } from "./LanguageContext";
 import { useState } from "react";
 import { HelloContext } from "./HelloContext";
+import { GithubUser } from "./GithubUser";
+import { GithubUsers } from "./GitHubUsers";
 
 export function App() {
 
@@ -86,7 +88,8 @@ export function App() {
                 </div>
             </LanguageContext.Provider>
             <hr />
-            
+            <h2>Esercizio  Data Fetching</h2>
+            <GithubUsers/>
         </div>
     );
 }
