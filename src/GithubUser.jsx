@@ -26,11 +26,13 @@ export function GithubUser({ username }) {
             });
     }, [username]);
 
-    if (loading) return <h1>Loading...</h1>;
-    if (error) return <h1>There's an Error: {error.message}</h1>;
+    // if (loading) return <h1>Loading...</h1>;
+    // if (error) return <h1>There's an Error: {error.message}</h1>;
 
     return (
         <div>
+            {loading &&<p>Loading...</p>}
+            {error && <p>There's an Error</p>}
             {data && (
                 <div>
                     <img src={data.avatar_url} alt={`${data.login}'s avatar`} width={100} />

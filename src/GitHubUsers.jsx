@@ -17,12 +17,7 @@ export function GithubUsers() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input 
-                    type="text" 
-                    value={username} 
-                    onChange={(e) => setUsername(e.target.value)} 
-                    placeholder="Enter Github username" 
-                />
+                <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Enter Github username" />
                 <button type="submit">Search</button>
             </form>
 

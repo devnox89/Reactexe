@@ -19,6 +19,7 @@ import { useState } from "react";
 import { HelloContext } from "./HelloContext";
 import { GithubUser } from "./GithubUser";
 import { GithubUsers } from "./GitHubUsers";
+import { CustomHook } from "./CustomHook";
 
 export function App() {
 
@@ -90,6 +91,9 @@ export function App() {
             <hr />
             <h2>Esercizio  Data Fetching</h2>
             <GithubUsers/>
+            <hr />
+            <h2>Esercizio Custom Hook</h2>
+            <CustomHook/>
         </div>
     );
 }

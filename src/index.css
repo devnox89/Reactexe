@@ -26,3 +26,27 @@
     background-color: whitesmoke;
     margin-top: 10px;
 }
+
+.custom-counter{
+    border: 3px solid red;
+    margin: 5px;
+    padding: 5px;
+}
+
+.custom-form{
+    border: 3px solid yellowgreen;
+    margin: 5px;
+    padding: 5px;
+}
+
+.custom-fetch{
+    border: 3px solid blue;
+    margin: 5px;
+    padding: 5px;
+}
+
+.custom-location{
+    border: 3px solid violet;
+    margin: 5px;
+    padding: 5px;
+}
