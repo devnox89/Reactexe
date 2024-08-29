@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: rgb(37, 37, 37);
+    }
+    a:hover{
+        color: rgb(81, 129, 193);
+    }
+}
+
+p{
+    text-align: center;
+}
+
+.app-main{
+    border: 3px solid rgb(81, 129, 193);
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgb(239, 239, 239);
+}
+
+.app-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(81, 129, 193);
+    padding: 1rem;
+}
+
+.app-route{
+    background-color: white;
+}
+
+.app-users{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    h2{
+        margin: 1rem;
+        padding: 1rem;
+        color: rgb(81, 129, 193);
+    }
+    li{
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+.app-search{
+    text-align: center;
+    form{
+        
+        padding: 20px;
+        margin: 20px;
+    }
+}
+.welcome{
+    text-align: center;
+    margin: 20px;
+}
+.counter{
+    text-align: center;
+    margin: 20px;
+    h2{
+        font-size: 2rem;
+    }
+    button{
+        margin: 10px 20px;
+        background-color: rgb(81, 129, 193);
+        color: white;
+        padding: 5px;
+    }
+}
